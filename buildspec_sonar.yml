@@ -16,7 +16,7 @@ phases:
   build:
     commands:
       - mvn test     
-      - mvn sonar:sonar -Dsonar.login=90a0cbadc5d1346963dc9ac5175e4664e1d61f02 -Dsonar.host.url=http://54.221.18.66:9000 -Dsonar.projectKey=SAST-POC
+      - mvn sonar:sonar -Dsonar.login=c14968d4bf843e166b993f245da4e1b56c31161f -Dsonar.host.url=http://54.221.18.66:9000 -Dsonar.projectKey=SAST-POC
       - sleep 6
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=poc-cs >result.json
       - cat result.json
